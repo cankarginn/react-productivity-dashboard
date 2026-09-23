@@ -1,0 +1,118 @@
+.quote-card {
+  position: relative;
+
+  min-height: 155px;
+
+  overflow: hidden;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #29205f 0%,
+      #5434b8 55%,
+      #7b50df 100%
+    );
+
+  color: #ffffff;
+}
+
+.quote-content {
+  position: relative;
+  z-index: 3;
+}
+
+.quote-text {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.25;
+
+  font-weight: 600;
+}
+
+.quote-author {
+  margin: 8px 0 14px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 9px;
+}
+
+.new-quote {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 7px 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   MOUNTAINS
+========================= */
+
+.quote-mountains {
+  position: absolute;
+
+  right: -20px;
+  bottom: -10px;
+
+  width: 65%;
+  height: 100%;
+
+  opacity: 0.45;
+}
+
+.mountain {
+  position: absolute;
+
+  bottom: 0;
+
+  width: 0;
+  height: 0;
+
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 115px solid rgba(20, 14, 60, 0.45);
+}
+
+.mountain-back {
+  right: 150px;
+
+  border-left-width: 75px;
+  border-right-width: 75px;
+  border-bottom-width: 90px;
+}
+
+.mountain-middle {
+  right: 65px;
+
+  border-left-width: 100px;
+  border-right-width: 100px;
+  border-bottom-width: 125px;
+}
+
+.mountain-front {
+  right: -30px;
+
+  border-left-width: 120px;
+  border-right-width: 120px;
+  border-bottom-width: 100px;
+}

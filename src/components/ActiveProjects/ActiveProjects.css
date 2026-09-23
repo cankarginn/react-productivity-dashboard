@@ -1,0 +1,539 @@
+.active-projects {
+  width: 100%;
+
+  margin-top: 14px;
+  padding: 18px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 6px 24px rgba(30, 30, 60, 0.04);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+}
+
+.section-header h2 {
+  margin: 0;
+
+  color: #151528;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.view-projects {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #5b3df5;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr))
+    minmax(100px, 0.72fr);
+
+  gap: 10px;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #eeeeF4;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image {
+  position: relative;
+
+  height: 92px;
+
+  overflow: hidden;
+}
+
+/* Mobile */
+
+.project-image.mobile {
+  background:
+    linear-gradient(
+      135deg,
+      #cfc2ff,
+      #7e62ed
+    );
+}
+
+/* E-commerce */
+
+.project-image.ecommerce {
+  background:
+    linear-gradient(
+      135deg,
+      #b9ead8,
+      #66c9a4
+    );
+}
+
+/* Marketing */
+
+.project-image.marketing {
+  background:
+    linear-gradient(
+      135deg,
+      #ffd4bd,
+      #f39a70
+    );
+}
+
+/* Brand */
+
+.project-image.brand {
+  background:
+    linear-gradient(
+      135deg,
+      #9bc5ff,
+      #3f72d7
+    );
+}
+
+/* =========================
+   ABSTRACT SHAPES
+========================= */
+
+.project-shape {
+  position: absolute;
+
+  border-radius: 50%;
+
+  opacity: 0.35;
+}
+
+.project-shape-one {
+  width: 100px;
+  height: 100px;
+
+  right: -25px;
+  top: -45px;
+
+  background: #ffffff;
+}
+
+.project-shape-two {
+  width: 70px;
+  height: 70px;
+
+  left: -20px;
+  bottom: -35px;
+
+  background: #ffffff;
+}
+
+/* =========================
+   PHONE
+========================= */
+
+.phone {
+  position: absolute;
+
+  width: 45px;
+  height: 78px;
+
+  left: 50%;
+  top: 8px;
+
+  transform:
+    translateX(-50%)
+    rotate(-17deg);
+
+  border-radius: 7px;
+
+  background: #27243e;
+
+  box-shadow:
+    0 8px 15px rgba(40, 30, 100, 0.25);
+}
+
+.phone-screen {
+  position: absolute;
+
+  width: 37px;
+  height: 66px;
+
+  left: 4px;
+  top: 6px;
+
+  border-radius: 4px;
+
+  background:
+    linear-gradient(
+      160deg,
+      #b4a2ff,
+      #6848e9
+    );
+}
+
+.phone-screen::after {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 5px;
+
+  left: 8px;
+  top: 13px;
+
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  box-shadow:
+    0 12px 0 rgba(255, 255, 255, 0.4),
+    0 24px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   SHOPPING BAG
+========================= */
+
+.shopping-bag {
+  position: absolute;
+
+  width: 60px;
+  height: 50px;
+
+  left: 50%;
+  top: 28px;
+
+  transform: translateX(-50%);
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 15px rgba(40, 100, 80, 0.15);
+}
+
+.bag-handle {
+  position: absolute;
+
+  width: 25px;
+  height: 18px;
+
+  left: 17px;
+  top: -13px;
+
+  border: 4px solid #ffffff;
+
+  border-bottom: none;
+
+  border-radius: 15px 15px 0 0;
+}
+
+/* =========================
+   MEGAPHONE
+========================= */
+
+.megaphone {
+  position: absolute;
+
+  width: 70px;
+  height: 55px;
+
+  left: 50%;
+  top: 20px;
+
+  transform:
+    translateX(-50%)
+    rotate(-12deg);
+}
+
+.megaphone-body {
+  position: absolute;
+
+  width: 55px;
+  height: 35px;
+
+  left: 5px;
+  top: 10px;
+
+  background: #ffffff;
+
+  clip-path: polygon(
+    0 25%,
+    100% 0,
+    100% 100%,
+    0 75%
+  );
+
+  border-radius: 5px;
+}
+
+.megaphone-body::after {
+  content: "";
+
+  position: absolute;
+
+  width: 15px;
+  height: 25px;
+
+  left: 3px;
+  top: 5px;
+
+  background: #ef8663;
+
+  border-radius: 4px;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand-shape {
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  left: 50%;
+  top: 45px;
+
+  transform: translate(-50%, -50%) rotate(35deg);
+
+  border-radius: 35%;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.15)
+    );
+}
+
+/* =========================
+   INFO
+========================= */
+
+.project-info {
+  padding: 9px 10px 10px;
+}
+
+.project-title-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 6px;
+
+  margin-bottom: 7px;
+}
+
+.project-title-row h3 {
+  min-width: 0;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #151528;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.project-title-row span {
+  flex-shrink: 0;
+
+  color: #77778b;
+
+  font-size: 9px;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.project-progress {
+  width: 100%;
+  height: 4px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #eeeeF4;
+}
+
+.progress-bar {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #5b3df5;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.project-footer {
+  margin-top: 9px;
+}
+
+.project-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.project-avatars span {
+  width: 22px;
+  height: 22px;
+
+  margin-right: -5px;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dcd7ff;
+
+  color: #4d3bbd;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.project-avatars span:nth-child(2) {
+  background: #d6eee4;
+  color: #30815f;
+}
+
+.project-avatars span:nth-child(3) {
+  background: #ffe0d2;
+  color: #a95c3f;
+}
+
+.project-avatars small {
+  margin-left: 9px;
+
+  color: #77778b;
+
+  font-size: 9px;
+}
+
+/* =========================
+   NEW PROJECT
+========================= */
+
+.new-project-card {
+  min-width: 0;
+
+  min-height: 145px;
+
+  border: 1px dashed #d8d8e4;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #77778b;
+
+  cursor: pointer;
+}
+
+.new-project-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #77778b;
+
+  margin-bottom: 8px;
+}
+
+.new-project-card p {
+  margin: 0;
+
+  font-size: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

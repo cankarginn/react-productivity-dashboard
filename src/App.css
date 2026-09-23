@@ -1,0 +1,108 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+
+  overflow-x: hidden;
+
+  background: #f7f7fc;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+
+  padding: 12px 24px 32px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.dashboard-top {
+  width: 100%;
+  max-width: 1120px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    220px;
+
+  gap: 18px;
+
+  align-items: center;
+
+  margin: -18px auto 10px;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.dashboard-bottom {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 12px;
+
+  margin-top: 12px;
+
+  align-items: start;
+}
+
+/* Sol taraf:
+   Today's Plan
+   +
+   Quote Card
+*/
+
+.dashboard-left {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .main-content {
+    padding: 16px 18px 24px;
+  }
+
+  .dashboard-top {
+    grid-template-columns:
+      minmax(0, 1fr)
+      180px;
+
+    gap: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-top {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 14px;
+  }
+}

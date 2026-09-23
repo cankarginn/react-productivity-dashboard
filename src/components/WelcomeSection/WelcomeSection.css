@@ -1,0 +1,383 @@
+.welcome-section {
+  width: 100%;
+  height: 250px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 0 0 18px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.welcome-content {
+  width: 38%;
+
+  position: relative;
+  z-index: 5;
+}
+
+.welcome-time {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 18px;
+
+  color: #29293b;
+
+  font-size: 12px;
+}
+
+.welcome-time svg {
+  color: #f4a623;
+}
+
+.welcome-section h1 {
+  margin: 0;
+
+  color: #151528;
+
+  font-size: 34px;
+  line-height: 1.08;
+
+  letter-spacing: -1.4px;
+
+  font-weight: 700;
+}
+
+.welcome-text {
+  margin: 13px 0 17px;
+
+  color: #77778b;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+.welcome-text strong {
+  color: #5b3df5;
+
+  font-weight: 600;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.planning-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #5b3df5;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.planning-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(91, 61, 245, 0.25);
+}
+
+/* =========================
+   ILLUSTRATION
+========================= */
+
+.welcome-illustration {
+  position: absolute;
+
+  left: 27%;
+  right: 2%;
+
+  top: 0;
+  bottom: 0;
+
+  pointer-events: none;
+}
+
+/* =========================
+   SUN
+========================= */
+
+.sun-glow {
+  position: absolute;
+
+  width: 115px;
+  height: 115px;
+
+  left: 52%;
+  top: 42px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 221, 144, 0.85) 0%,
+    rgba(255, 221, 144, 0.35) 45%,
+    rgba(255, 221, 144, 0) 72%
+  );
+}
+
+/* =========================
+   CLOUDS
+========================= */
+
+.cloud {
+  position: absolute;
+
+  height: 15px;
+
+  border-radius: 50px;
+
+  background: rgba(210, 198, 255, 0.72);
+}
+
+.cloud-one {
+  width: 75px;
+
+  left: 10%;
+  top: 70px;
+}
+
+.cloud-two {
+  width: 100px;
+
+  right: 7%;
+  top: 85px;
+}
+
+.cloud-three {
+  width: 60px;
+
+  left: 46%;
+  top: 50px;
+}
+
+/* =========================
+   ISLAND
+========================= */
+
+.island {
+  position: absolute;
+
+  width: 235px;
+  height: 55px;
+
+  left: 52%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #9672ff 0%,
+    #5b3de5 55%,
+    #3022b7 100%
+  );
+
+  box-shadow:
+    0 12px 22px rgba(75, 49, 190, 0.2),
+    inset 0 -9px 15px rgba(30, 20, 130, 0.22);
+}
+
+.island::after {
+  content: "";
+
+  position: absolute;
+
+  width: 185px;
+  height: 24px;
+
+  left: 50%;
+  bottom: -13px;
+
+  transform: translateX(-50%);
+
+  background: #4a32c7;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    84% 55%,
+    68% 40%,
+    52% 78%,
+    37% 45%,
+    22% 70%,
+    10% 35%
+  );
+}
+
+/* =========================
+   PERSON
+========================= */
+
+.person {
+  position: absolute;
+
+  width: 54px;
+  height: 70px;
+
+  left: 50%;
+  top: -58px;
+
+  transform: translateX(-50%);
+}
+
+.head {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  left: 19px;
+  top: 2px;
+
+  border-radius: 50%;
+
+  background: #22223a;
+}
+
+.body {
+  position: absolute;
+
+  width: 28px;
+  height: 35px;
+
+  left: 12px;
+  top: 16px;
+
+  border-radius: 10px 10px 6px 6px;
+
+  background: linear-gradient(
+    135deg,
+    #633ff1,
+    #3124a9
+  );
+}
+
+.laptop {
+  position: absolute;
+
+  width: 33px;
+  height: 20px;
+
+  left: 27px;
+  top: 27px;
+
+  border-radius: 3px;
+
+  background: #303044;
+
+  transform: rotate(-8deg);
+}
+
+.laptop::after {
+  content: "";
+
+  position: absolute;
+
+  width: 37px;
+  height: 3px;
+
+  left: -2px;
+  bottom: -3px;
+
+  border-radius: 5px;
+
+  background: #161625;
+}
+
+/* =========================
+   LEGS
+========================= */
+
+.leg {
+  position: absolute;
+
+  width: 8px;
+  height: 25px;
+
+  top: 44px;
+
+  border-radius: 8px;
+
+  background: #202033;
+}
+
+.leg-one {
+  left: 18px;
+
+  transform: rotate(18deg);
+}
+
+.leg-two {
+  left: 32px;
+
+  transform: rotate(-15deg);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .welcome-section {
+    height: 230px;
+  }
+
+  .welcome-section h1 {
+    font-size: 29px;
+  }
+
+  .welcome-illustration {
+    left: 38%;
+    right: 2%;
+  }
+}
+
+@media (max-width: 700px) {
+  .welcome-section {
+    height: 400px;
+
+    align-items: flex-start;
+  }
+
+  .welcome-content {
+    width: 100%;
+  }
+
+  .welcome-illustration {
+    left: 5%;
+    right: 5%;
+    top: 190px;
+  }
+}
